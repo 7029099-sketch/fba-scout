@@ -17,22 +17,22 @@
   <section id="scannerView">
     <div class="scanPanel panel">
       <div class="heroCopy">
-        <div class="eyebrow">FBA PRODUCT SCAN</div>
-        <h1>Вставь ссылку поставщика</h1>
-        <p>Scout собирает товары с сайта, ищет их на Amazon US и сразу показывает закупку, полную себестоимость, прибыль и ROI.</p>
+        <div class="eyebrow">FULL SITE FBA SCAN</div>
+        <h1>Вставь основной сайт поставщика</h1>
+        <p>Например <b>https://brand.com</b>. Scout сам ищет каталог и карточки товаров, затем по каждому товару проверяет Amazon US и считает закупку, полную себестоимость, прибыль и ROI.</p>
       </div>
       <div class="scanbar">
-        <input id="scanUrl" class="inp" placeholder="https://manufacturer.com/products/...">
-        <button id="scanBtn" class="btn">Анализировать</button>
+        <input id="scanUrl" class="inp" placeholder="https://manufacturer.com">
+        <button id="scanBtn" class="btn">Сканировать сайт</button>
       </div>
       <div class="loader" id="loader">
-        <div class="loaderTop"><div class="spinner"></div><div class="loaderText"><b id="loaderTitle">Открываю сайт</b><span id="loaderSub">Ищу товары и карточки</span></div></div>
+        <div class="loaderTop"><div class="spinner"></div><div class="loaderText"><b id="loaderTitle">Открываю сайт</b><span id="loaderSub">Ищу sitemap, категории и карточки товаров</span></div></div>
         <div class="progress"><i id="progressBar"></i></div>
       </div>
     </div>
 
     <div class="summary">
-      <div class="kpi"><span>Найдено товаров</span><b id="sTotal">0</b></div>
+      <div class="kpi"><span>Проверено товаров</span><b id="sTotal">0</b></div>
       <div class="kpi"><span>Есть на Amazon</span><b id="sFound">0</b></div>
       <div class="kpi"><span>Нет на Amazon</span><b id="sNew">0</b></div>
       <div class="kpi"><span>Нужно проверить</span><b id="sUnverified">0</b></div>
@@ -40,7 +40,7 @@
 
     <div class="panel resultsPanel">
       <div class="resultsHead">
-        <div><h2>Товары</h2><div class="small" id="sourceInfo">Вставь ссылку выше</div></div>
+        <div><h2>Товары</h2><div class="small" id="sourceInfo">Вставь основной домен выше</div></div>
         <div class="resultFilters">
           <button class="filter active" data-filter="all">Все</button>
           <button class="filter" data-filter="found">Есть</button>
@@ -63,5 +63,6 @@
   </section>
 </div>
 <script src="/app.js"></script>
+<script src="/domain-scan.js"></script>
 </body>
 </html>
